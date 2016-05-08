@@ -13,7 +13,7 @@
   apt: name=r-cran-littler
 
 - name: Install docopt
-  command: /usr/bin/r -e 'if(is.null(packageVersion("docopt"))) install.packages("docopt")'
+  command: /usr/bin/r -e 'if(! "docopt" %in% installed.packages()) install.packages("docopt")'
 
 - name: Install R packages from CRAN
   script: scripts/install.r "{{ cran_packages | join(' ') }}"

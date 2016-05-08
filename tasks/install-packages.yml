@@ -8,6 +8,7 @@
 
 - name: Setup repo
   copy: content="options(repos = c(CRAN = 'https://cran.rstudio.com'))" dest=~/.Rprofile
+  become: no
 
 - name: Install r
   apt: name=r-cran-littler

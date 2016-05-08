@@ -8,7 +8,7 @@
   become: no
 
 - name: Get the archive of RStudio Server
-  get_url: url=https://download2.rstudio.org/rstudio-server-{{ rstudio_version.content }}-amd64.deb dest=/tmp/rstudio.deb
+  get_url: url=http://download2.rstudio.org/rstudio-server-{{ rstudio_version.content }}-amd64.deb dest=/tmp/rstudio.deb
   become: no
 
 - name: Install RStudio Server

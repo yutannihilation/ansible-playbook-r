@@ -1,0 +1,22 @@
+---
+- name: Include vars
+  include_vars: vars/packages.yml
+
+- name: Install shared libraries
+  apt: name={{ item }}
+  with_items: "{{ shared_libraries }}"
+
+- name: Setup repo
+  copy: content="options(repos = c(CRAN = 'https://cran.rstudio.com'))" dest=~/.Rprofile
+
+- name: Install r
+  apt: name=r-cran-littler
+
+- name: Install docopt
+  command: /usr/bin/r -e 'if(is.null(packageVersion("docopt"))) install.packages("docopt")'
+
+- name: Install R packages from CRAN
+  script: scripts/install.r "{{ cran_packages | join(' ') }}"
+
+- name: Install R packages from Github
+  command: "/usr/lib/R/site-library/littler/examples/installGithub.r {{ github_packages | join(' ') }}"

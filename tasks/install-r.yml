@@ -1,0 +1,9 @@
+---
+- name: Add APT repository
+  apt_repository: repo="deb https://cran.rstudio.com/bin/linux/ubuntu/ {{ ansible_distribution_release }}/"
+
+- name: Add the APT key
+  apt_key: keyserver=keyserver.ubuntu.com id=E084DAB9
+
+- name: Install R
+  apt: name=r-base update_cache=yes cache_valid_time=600

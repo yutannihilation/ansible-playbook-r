@@ -1,0 +1,56 @@
+---
+cran_packages:
+  - ggplot2
+  - gridExtra
+  - ggrepel
+  - ggfortify
+  - dplyr
+  - purrr
+  - tidyr
+  - lubridate
+  - stringr
+  - httr
+  - xml2
+  - rvest
+  - readr
+  - curl
+  - jsonlite
+  - V8
+  - rmarkdown
+  - knitr
+  - roxygen2
+  - magrittr
+  - testthat
+  - devtools
+  - Rcpp
+  - RcppRoll
+  - RcppEigen
+  - foreach
+  - leaflet
+  - DiagrammeR
+  - rstudioapi
+  - shiny
+  - shinydashboard
+  - sp
+  - rgeos
+  - rgdal
+  - maptools
+  - animation
+  - forecast
+
+shared_libraries:
+  - libcurl4-openssl-dev
+  - libssh2-1-dev
+  - libgit2-dev
+  - libicu-dev
+  - libxml2-dev
+  - libgeos-dev
+  - libproj-dev
+  - libgdal-dev
+  - libv8-dev
+  - libprotobuf-dev
+  - protobuf-compiler
+
+github_packages:
+  - rstudio/flexdashboard
+  - wesm/feather/R

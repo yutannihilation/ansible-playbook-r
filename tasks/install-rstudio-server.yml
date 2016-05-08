@@ -5,9 +5,11 @@
 - name: Check the newest version of RStudio
   uri: url=http://download2.rstudio.org/current.ver return_content=yes
   register: rstudio_version
+  become: no
 
 - name: Get the archive of RStudio Server
   get_url: url=https://download2.rstudio.org/rstudio-server-{{ rstudio_version.content }}-amd64.deb dest=/tmp/rstudio.deb
+  become: no
 
 - name: Install RStudio Server
   command: /usr/bin/gdebi --non-interactive /tmp/rstudio.deb

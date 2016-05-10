@@ -15,6 +15,8 @@ if (!opt$force) {
   targets <- targets[! targets %in% installed.packages()]
 }
 
+lib <- Sys.getenv("R_LIBS_USER")
+
 if (length(targets) > 0) {
-  install.packages(targets)
+  install.packages(targets, lib = lib)
 }

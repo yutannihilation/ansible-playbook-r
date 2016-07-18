@@ -39,7 +39,7 @@ cran_packages:
   - forecast
 
 shared_libraries:
-  - libcurl4-openssl-dev
+  - libcurl4-gnutls-dev
   - libssh2-1-dev
   - libgit2-dev
   - libicu-dev

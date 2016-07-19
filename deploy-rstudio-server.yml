@@ -4,6 +4,9 @@
   become: yes
 
   tasks:
-    - include: tasks/install-r.yml
-    - include: tasks/install-packages.yml
-    - include: tasks/install-rstudio-server.yml
+    - name: Install R
+      include: tasks/install-r.yml
+    - name: Install R packages
+      include: tasks/install-packages.yml
+    - name: Install RStudio server
+      include: tasks/install-rstudio-server.yml

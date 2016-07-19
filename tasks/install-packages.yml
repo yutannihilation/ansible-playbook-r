@@ -13,8 +13,17 @@
 - name: Install r
   apt: name=r-cran-littler
 
+- name: Get R_LIBS_USER
+  command: /usr/bin/r -e 'cat(Sys.getenv("R_LIBS_USER"))'
+  become: no
+  register: r_libs_user
+
+- name: Create directory for user libraries
+  file: path={{ r_libs_user.stdout }} state=directory
+  become: no
+
 - name: Install docopt
-  command: /usr/bin/r -e 'if(! "docopt" %in% installed.packages()) install.packages("docopt")'
+  command: /usr/bin/r --libpath={{ r_libs_user.stdout }} -e 'if(! "docopt" %in% installed.packages()) install.packages("docopt")'
   become: no
 
 - name: Install R packages from CRAN

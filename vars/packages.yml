@@ -37,6 +37,8 @@ cran_packages:
   - maptools
   - animation
   - forecast
+  - flexdashboard
+  - feather
 
 shared_libraries:
   - libcurl4-gnutls-dev
@@ -51,6 +53,5 @@ shared_libraries:
   - libprotobuf-dev
   - protobuf-compiler
 
-github_packages:
-  - rstudio/flexdashboard
-  - wesm/feather/R
+#github_packages:
+

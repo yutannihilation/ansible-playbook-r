@@ -33,3 +33,4 @@
 - name: Install R packages from Github
   command: "/usr/lib/R/site-library/littler/examples/installGithub.r {{ github_packages | join(' ') }}"
   become: no
+  when: github_packages is defined

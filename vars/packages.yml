@@ -3,47 +3,10 @@ cran_packages:
   # tidyverse packages:
   # broom, DBI, dplyr, forcats, ggplot2, haven, httr, hms, jsonlite, lubridate, magrittr,
   # modelr, purrr, readr, readxl, stringr, tibble, rvest, tidyr, xml2
-  - tidyverse
-  # ggplot2
-  - gridExtra
-  - ggrepel
-  - ggfortify
-  # opencpu packages
-  - curl
-  - jsonlite
-  - V8
-  - magick
-  # Rmarkdown
-  - rmarkdown
-  - knitr
-  - formatR
-  - roxygen2
-  - flexdashboard
-  # Package Development
-  - testthat
-  - devtools
-  - profvis
-  - vdiffr
-  # Rcpp
-  - Rcpp
-  - RcppRoll
-  - RcppEigen
-  # GIS
-  - leaflet
-  - DiagrammeR
-  - sp
-  - rgeos
-  - rgdal
-  - maptools
-  # Shiny
-  - rstudioapi
-  - shiny
-  - shinydashboard
-  # misc
-  - animation
-  - forecast
-  - foreach
   - feather
+  - data.table
+  - lubridate
+  - zoo
 
 shared_libraries:
   - libcurl4-gnutls-dev

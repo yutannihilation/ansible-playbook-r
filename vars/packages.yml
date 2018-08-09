@@ -1,22 +1,96 @@
 ---
 cran_packages:
-  # tidyverse packages:
-  # broom, DBI, dplyr, forcats, ggplot2, haven, httr, hms, jsonlite, lubridate, magrittr,
-  # modelr, purrr, readr, readxl, stringr, tibble, rvest, tidyr, xml2
   - feather
   - data.table
+  - remotes
+  - devtools
   - lubridate
   - zoo
   - aws.s3
   - bizdays
-  - brocks
   - Cairo
   - caret
   - CoxBoost
-
+  - cvAUC
+  - directlabels
+  - DMwR
+  - doMC
+  - doParallel
+  - doRNG
+  - dplyr
+  - e1071
+  - FinCal
+  - gdata
+  - ggplot2
+  - ggRandomForests
+  - ggrepel
+  - glmnet
+  - grid
+  - gridExtra
+  - h2o
+  - hot.deck
+  - htmltools
+  - httr
+  - ISOweek
+  - jsonlite
+  - knitr
+  - laeken
+  - limma
+  - lubridate
+  - Metrics
+  - mice
+  - microbenchmark
+  - missForest
+  - mlbench
+  - mlr
+  - ModelMetrics
+  - mondate
+  - optparse
+  - parallel
+  - PerformanceAnalytics
+  - plot3D
+  - plotly
+  - pROC
+  - psych
+  - png
+  - qmao
+  - Quandl
+  - quantmod
+  - randomForestSRC
+  - ranger
+  - Rcpp
+  - rgl
+  - rhdfs
+  - risksetROC
+  - RJSONIO
+  - rmarkdown
+  - rms
+  - RODBC
+  - RQuantLib
+  - servr
+  - shiny
+  - SparkR
+  - splines
+  - stringr
+  - survival
+  - termstrc
+  - tidyverse
+  - timeDate
+  - TTR
+  - urltools
+  - utils
+  - VIM
+  - WriteXLS
+  - xlsx
+  - xts
+  - yaml
+  - YieldCurve
 
 shared_libraries:
+  - r-cran-rgl
   - libcurl4-gnutls-dev
+  - libcairo2-dev
+  - libxt-dev
   - libssh2-1-dev
   - libgit2-dev
   - libicu-dev
@@ -27,6 +101,14 @@ shared_libraries:
   - libv8-dev
   - libprotobuf-dev
   - protobuf-compiler
+  - libglu1-mesa-dev
+  - freeglut3-dev
+  - mesa-common-dev
 
-#github_packages:
 
+github_packages:
+  - brendan-r/brocks
+  - gsee/qmao
+  - IRkernel/IRkernel 
+  - RevolutionAnalytics/rhdfs/pkg
+  - RevolutionAnalytics/rmr2/pkg

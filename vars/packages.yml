@@ -109,6 +109,6 @@ shared_libraries:
 github_packages:
   - brendan-r/brocks
   - gsee/qmao
-  - IRkernel/IRkernel 
-  - RevolutionAnalytics/rhdfs/pkg
-  - RevolutionAnalytics/rmr2/pkg
+##  - IRkernel/IRkernel 
+##  - RevolutionAnalytics/rhdfs/pkg
+##  - RevolutionAnalytics/rmr2/pkg

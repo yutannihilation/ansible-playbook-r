@@ -8,5 +8,5 @@
       include: tasks/install-r.yml
     - name: Install R packages
       include: tasks/install-packages.yml
-    - name: Install RStudio server
-      include: tasks/install-rstudio-server.yml
+##    - name: Install RStudio server
+##      include: tasks/install-rstudio-server.yml

@@ -35,7 +35,7 @@ cran_packages:
   - jsonlite
   - knitr
   - laeken
-  - limma
+##  - limma needed for what? (from bioconductor)
   - lubridate
   - Metrics
   - mice
@@ -53,27 +53,27 @@ cran_packages:
   - pROC
   - psych
   - png
-  - qmao
+##  - qmao avail on r-forge github
   - Quandl
   - quantmod
   - randomForestSRC
   - ranger
   - Rcpp
   - rgl
-  - rhdfs
+##  - rhdfs not a cran package
   - risksetROC
   - RJSONIO
   - rmarkdown
   - rms
   - RODBC
-  - RQuantLib
+##  - RQuantLib
   - servr
   - shiny
   - SparkR
   - splines
   - stringr
   - survival
-  - termstrc
+##  - termstrc deleted from cran
   - tidyverse
   - timeDate
   - TTR
@@ -107,7 +107,7 @@ shared_libraries:
 
 
 github_packages:
-  - brendan-r/brocks
+##  - brendan-r/brocks
   - gsee/qmao
 ##  - IRkernel/IRkernel 
 ##  - RevolutionAnalytics/rhdfs/pkg

@@ -52,14 +52,14 @@ cran_packages:
   - plotly
   - pROC
   - psych
-  - png
+##  - png
 ##  - qmao avail on r-forge github
   - Quandl
   - quantmod
   - randomForestSRC
   - ranger
   - Rcpp
-  - rgl
+##  - rgl
 ##  - rhdfs not a cran package
   - risksetROC
   - RJSONIO
@@ -81,7 +81,7 @@ cran_packages:
   - utils
   - VIM
   - WriteXLS
-  - xlsx
+##  - xlsx
   - xts
   - yaml
   - YieldCurve
